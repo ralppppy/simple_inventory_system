@@ -9,7 +9,9 @@ const Home: React.FC<{}> = () => {
       <Content headerTitle="Sales record">
         <Card
           headerTitle="WOWW"
-          footer={<Pagination size="sm" className="m-0 float-right" />}
+          footer={
+            <Pagination pages={50} size="sm" className="m-0 float-right" />
+          }
         >
           <table className="table table-striped">
             <thead>
